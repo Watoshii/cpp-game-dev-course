@@ -1,0 +1,18 @@
+{
+    "label": "Run in CMD",
+    "type": "shell",
+    "command": "start",
+    "args": [
+        "cmd",
+        "/k",
+        "cd /d ${fileDirname} && ${fileBasenameNoExtension}.exe"
+    ],
+    "group": "test",
+    "dependsOn": "Build C++ File",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+    }
+}
